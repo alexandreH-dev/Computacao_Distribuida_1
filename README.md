@@ -3,7 +3,7 @@ Departamento de Computação
 
 **EXERCÍCIO 1.1**
 
-**Membros:** Alexandre Henrique e Renan Almeida
+**Membros:** Alexandre Henrique, Antônio Alves e Renan Almeida
 
 ---
 

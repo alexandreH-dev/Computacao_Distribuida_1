@@ -13,7 +13,7 @@ def disponibilidade_analitica(n, k, p):
         return sum(comb(n, i) * (p ** i) * ((1 - p) ** (n - i)) for i in range(k, n + 1))
 
 # Simulador estocástico
-def disponibilidade_estocastica(n, k, p, R=100000):
+def disponibilidade_estocastica(n, k, p, R):
     """
     Simula a disponibilidade do serviço para n servidores, com limiar k e probabilidade p.
     
@@ -36,7 +36,7 @@ def disponibilidade_estocastica(n, k, p, R=100000):
 # Configurações
 n_values = [3, 5, 10]  # Número de servidores
 p_values = np.linspace(0, 1, 21)  # Probabilidade de disponibilidade do servidor
-R = 100000  # Número de rodadas de simulação
+R = 100  # Número de rodadas de simulação
 
 # Criar DataFrame para armazenar os resultados
 resultados = []
