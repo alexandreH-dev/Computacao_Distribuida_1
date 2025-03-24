@@ -14,18 +14,6 @@ def disponibilidade_analitica(n, k, p):
 
 # Simulador estocástico
 def disponibilidade_estocastica(n, k, p, R):
-    """
-    Simula a disponibilidade do serviço para n servidores, com limiar k e probabilidade p.
-    
-    Parâmetros:
-    n (int) - Número total de servidores
-    k (int) - Mínimo de servidores necessários para funcionamento
-    p (float) - Probabilidade de cada servidor estar disponível
-    R (int) - Número de rodadas da simulação
-    
-    Retorna:
-    float - Proporção de rodadas em que o serviço ficou disponível
-    """
     sucessos = 0
     for _ in range(R):
         servidores_disponiveis = np.sum(np.random.rand(n) < p)
